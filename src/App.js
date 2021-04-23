@@ -15,6 +15,9 @@ function App() {
 
   // useEffect <<<<<<POWERFUL
   // piece of code which runs based on a given condition.
+
+  //so basically the useEffect hook can be used to run a piece of code whenever something changes , it can be a variable , it can be when the route is mounted up
+  // and  useEffect(()=>{accepts a function}, [ also accepts an array with the things if changed will trigger the code in the hook]).
   
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
