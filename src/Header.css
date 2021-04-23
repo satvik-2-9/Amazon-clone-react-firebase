@@ -1,0 +1,66 @@
+.header{
+    background-color: #232F3E;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0 ; 
+    z-index:100 ; 
+}
+.header_logo{
+    width: 100px;
+    object-fit: contain;
+    /* mantains the aspect ration of the image no matter how much you stectch the screen. */
+    margin:0 20px ; 
+    margin-top: 18px;
+}
+.header_optionBasket{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.header_basketcount{
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+
+.header_nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header_link{
+    color: white;
+    text-decoration: none;
+}
+
+.header_search{
+    display:flex ; 
+    /* basically display flex puts everything in one line inside of a div */
+    flex:1 ; 
+    /* flex=1 tells the search bar to take the maximum amount of space that it can */
+}
+.header_option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* another fact:margin is something that gets added to outside of the element , padding on the other hand is something that gets added inside the element. */
+}
+.header_optionlineone{
+    font-size: 10px;
+}
+.header_optionlinetwo{
+    font-size: 13px ;
+    font-weight: 800;
+}
+.header_searchInput{
+    height:12px ; 
+    padding:10px ; 
+    border:none ; 
+    width:100% ; 
+}
+.header_searchIcon{
+    padding: 5px;
+    height: 22px !important ;
+    background-color: orange;
+}
