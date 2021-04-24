@@ -24,6 +24,7 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
                     <strong>{price}</strong>
                 </p>
                 <div className="checkoutProduct__rating">
+                    {/* making a new array , with a size of rating and just traversing it to print something out some number of times.  */}
                     {Array(rating)
                     .fill()
                     .map((_, i) => (

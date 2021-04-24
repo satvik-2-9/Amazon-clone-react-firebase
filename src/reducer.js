@@ -1,6 +1,8 @@
 // what the data layer looks like in the beginning
 
 // data layer logic
+
+// just define pehle what the data layer looks like.
 export const initialState = {
     basket: [],
     user: null,
@@ -15,8 +17,9 @@ export const initialState = {
 export const getBasketTotal = (basket) =>
     basket?.reduce((amount, item) => item.price + amount, 0); 
 
-// adding 2 functionalities to the data layer , how to manupilate the data here.
+// adding 3 functionalities to the data layer , how to manupilate the data here.
 // ye default arguments hain of the reducer , (state of the data layer , action we gonna take)
+// always return the original state and then modify the changes.
 const reducer = (state,action)=>{
     console.log(action);
     switch (action.type) {

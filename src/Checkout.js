@@ -17,10 +17,12 @@ function Checkout() {
         />
 
         <div>
+          {/* the ? before the dot , tells the browser to wait for the item user to load up before rendering  this code. */}
           <h3>Hello, {user?.email}</h3>
-          
           <h2 className="checkout__title">Your shopping Basket</h2>
-          {basket.length===0?<p>Your basket is currently empty.</p>:null}
+
+          {basket.length === 0 ? <p>Your basket is currently empty.</p> : null}
+          {/* array.map(arrayitem => (function)) , standard map function in JSX.*/}
           {basket.map(item => (
             <CheckoutProduct
               id={item.id}

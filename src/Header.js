@@ -33,7 +33,7 @@ function Header() {
             {/* 4 links  */}
             <div className="header_nav">
                 {/* 1st link */}
-                   {/* href in the anchor tag causes a refresh , but this link tag does note make the whole page refresh */}
+                   {/* href in the anchor tag causes a refresh , but this link tag does not make the whole page refresh */}
                 <Link to={!user && "/login"} className="header_link">
                     <div onClick={login} className="header_option">
                     <span className="header_optionlineone">Hello {!user?'Guest': user.email}</span>

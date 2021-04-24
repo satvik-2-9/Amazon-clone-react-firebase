@@ -20,6 +20,7 @@ function App() {
   // and  useEffect(()=>{accepts a function}, [ also accepts an array with the things if changed will trigger the code in the hook]).
   
   useEffect(() => {
+    //  auth is another method provided by firebase for authentication.
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
       
       if (authUser) {
@@ -38,6 +39,7 @@ function App() {
     });
     return () => {
       // any cleanup operations go in here.
+      // eveytime the useEffect hook is triggered by a change in the objects in the array , pehle the cleanup function for the previous state is run , so that no eventlisteners stay on always. 
       unsubscribe(); 
     }
   }, [])
